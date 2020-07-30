@@ -8,7 +8,7 @@ Grafana는 사용자 권한을 사용하여 사용자가 볼 수 있는 데이�
 
 Grafana의 설정 파일이나 권한을 자세히 찾아봐도 해당 행동을 제약할 수 있는 설정이 없어서 개발자도구를 사용하여 해당 데이터가 어떤 Javascript파일을 사용하여 보여지는지 알아냈다.
 
-#### 방법
+#### 순서 1
 /usr/share/grafana/public/build 디렉토리를 살펴보면 아래 이름과 비슷한 파일을 확인할 수 있다.
 
 ````
@@ -42,13 +42,19 @@ JSON과 Query 메뉴를 완전히 지워버리려면 아래 사진의 코드를 
 
 <br>
 
-5. 공유하기의 Export 메뉴 숨기기
+#### 순서 2
+
+공유하기의 Export 메뉴 숨기기
 공유하기 메뉴에 들어가면 아래와 같이 Save to file과 View JSON 메뉴가 있는데 이를 통해서 쿼리 조회가 가능하다.
 ![Alt text](https://raw.githubusercontent.com/chupark/Grafana/master/images2/5.%20hide.png)    
 
-따라서 아래의 방법으로 숨김 처리를 진행한다.   
-먼저 Export 버튼을 숨긴다.   
+따라서 Export메뉴도 숨김 처리를 진행한다. 해당 UI를 보여주는 스크립트 파일은 아래와 같다.   
+````
+app.c8856b8b39626543db12.js
+````
+
+1. Export 버튼을 숨기기
 ![Alt text](https://raw.githubusercontent.com/chupark/Grafana/master/images2/6.%20hide.png)    
 
-그 다음 Export 블레이드에서 보여지는 하위 메뉴들도 확실하게 숨긴다.   
+2. Export 블레이드의 하위 메뉴 숨기기
 ![Alt text](https://raw.githubusercontent.com/chupark/Grafana/master/images2/7.%20hide.png)    
