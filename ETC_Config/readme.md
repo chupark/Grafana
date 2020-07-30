@@ -52,8 +52,8 @@ JSON과 Query 메뉴를 완전히 지워버리려면 아래 사진의 코드를 
 app.c8856b8b39626543db12.js
 ````
 
-1. Export 버튼을 숨기기
+1. Export 버튼을 숨기기    
 ![Alt text](https://raw.githubusercontent.com/chupark/Grafana/master/images2/6.%20hide.png)    
 
-2. Export 블레이드의 하위 메뉴 숨기기
+2. Export 블레이드의 하위 메뉴 숨기기    
 ![Alt text](https://raw.githubusercontent.com/chupark/Grafana/master/images2/7.%20hide.png)    
