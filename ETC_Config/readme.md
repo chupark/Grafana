@@ -39,3 +39,16 @@ Inspect의 Query와 Panel Json 메뉴를 숨기려면 아래 코드를 수정한
 4. Inspect 블레이드의 JSON, Query 메뉴 숨기기   
 JSON과 Query 메뉴를 완전히 지워버리려면 아래 사진의 코드를 찾아서 삭제한다.   
 ![Alt text](https://raw.githubusercontent.com/chupark/Grafana/master/images2/1.%20hide.png)    
+
+<br>
+
+5. 공유하기의 Export 메뉴 숨기기
+공유하기 메뉴에 들어가면 아래와 같이 Save to file과 View JSON 메뉴가 있는데 이를 통해서 쿼리 조회가 가능하다.
+![Alt text](https://raw.githubusercontent.com/chupark/Grafana/master/images2/5.%20hide.png)    
+
+따라서 아래의 방법으로 숨김 처리를 진행한다.   
+먼저 Export 버튼을 숨긴다.   
+![Alt text](https://raw.githubusercontent.com/chupark/Grafana/master/images2/6.%20hide.png)    
+
+그 다음 Export 블레이드에서 보여지는 하위 메뉴들도 확실하게 숨긴다.   
+![Alt text](https://raw.githubusercontent.com/chupark/Grafana/master/images2/7.%20hide.png)    
